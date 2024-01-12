@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>ftps://www.perltechnologies.com/urbanapp.perltechnologies.com</_PublishTargetUrl>
+    <History>False|2021-10-24T04:49:18.3961682Z;True|2021-10-24T04:38:37.7932482+00:00;True|2021-10-24T03:30:17.8075330+00:00;True|2021-10-24T02:58:08.6552942+00:00;True|2021-10-24T02:34:45.2734469+00:00;True|2021-10-23T15:46:29.1002438+00:00;True|2021-10-23T15:43:32.4197318+00:00;True|2021-10-22T03:36:23.1766381+00:00;True|2021-10-22T03:33:12.6959655+00:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaO1wRDzOik+/y2TnZ/ZuqQAAAAACAAAAAAAQZgAAAAEAACAAAAATVl1WYKFsTHJzDvgEa0EWYV8kM/T8zuhZXxzhM+zNMAAAAAAOgAAAAAIAACAAAAAONO+8qhFt92x9xkv5ZlP5b0proteuLYM3G3+2zDLOoSAAAAB7ZQ4Ac/HD9d3sFw+dZXJWufzQMwFEgjo4+dlh4C6+CkAAAAByqLiewxVU9AW7QML/s2b7mpVCRZDvsb45OWy+H+YDeC6WFmfzmouyDflkJGjLM9fcSKTpilchjfC2ebECEMJ+</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="UrbanStyleConnect">
+      <Value>server=localhost%3bport=3306%3buser=perlqcod%3bpassword= %3bdatabase=perlqcod_urbanstyle</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="UrbanStyleApi.Models.perlqcod_urbanstyleContext">
+      <Value>server=localhost%3bport=3306%3buser=perlqcod%3bpassword= %3bdatabase=perlqcod_urbanstyle</Value>
+    </EFMigrations>
+  </ItemGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>10/12/2021 23:40:27</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>10/23/2021 15:33:37</publishTime>
+    </File>
+    <File Include="appsettings.production.json">
+      <publishTime>10/24/2021 04:37:11</publishTime>
+    </File>
+    <File Include="UrbanStyleApi">
+      <publishTime>10/24/2021 04:37:11</publishTime>
+    </File>
+    <File Include="UrbanStyleApi.pdb">
+      <publishTime>10/24/2021 04:37:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
